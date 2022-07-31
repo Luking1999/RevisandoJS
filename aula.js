@@ -1,5 +1,4 @@
 
-
 const anime = {
     titulo: 'One Piece',
     ano: 1999,
@@ -12,34 +11,7 @@ function exibirPropriedades(obj){
         if (typeof obj[prop] === 'string') 
             console.log(prop, obj[prop])
 }
-/**
- * maneira extensa
- * function criarManga(){
- *  const manga = {
- *      nomeManga: 'Wind Breaker',
- *      autorManga: 'Jo Yongseuk',
- *      categoria: ['Comédia', 'Drama', 'Esportes', 'Romance'],
- *      ler: function(){
- *          console.log("cap1: Estou indo para biblioteca.")
- *      }
- *  } 
- * }
- */
-//  camelCase umDoisTresQuatro
-// function criarManga(nomeManga, autorManga, categoria){
-//     return {
-//         nomeManga,
-//         autorManga,
-//         categoria,
-//         ler(){
-//             console.log("cap1: Estou indo para biblioteca.")
-//         }
-//     }
-// }
-// const mangaWB = criarManga('Wind Breaker', 'Jo Yongseuk', ['Comédia', 'Drama', 'Esportes', 'Romance']);
-// console.log(mangaWB);
 
-//  PascalCase UmDoisTres
 function Manga(nomeManga, autorManga, categoria){
     this.nomeManga = nomeManga,
     this.autorManga = autorManga,
@@ -68,7 +40,6 @@ console.log(mouse)
 
 
 // clonar objeto
-
 const objClonado = Object.assign({
     origem: 'Japão'
 }, anime);
@@ -77,3 +48,61 @@ console.log(objClonado)
 // spread - I guess is the name
 const objClonado2 = {...anime} 
 console.log(objClonado2)
+
+
+const data1 = new Date()
+const data2 = new Date("july 07 2022 18:01")
+const data3 = new Date(2022,06,30,30,7)
+
+
+data3.setFullYear(2030)
+data2.toDateString()
+
+function exibirAnime(anime){
+    for (const lerAnime in anime) {
+        console.log(lerAnime, anime[anime])
+    }
+}
+
+exibirAnime(anime)
+
+function Musica(nome,letra, autor){  
+    this.nome = nome
+    this.letra = letra
+    this.autor = autor
+}
+const musica = new Musica('Withou me', `Obie Trice, real name no gimmicks
+Two trailer park girls go round the outside`, 'Eminem')
+const musica2 = new Musica('All I Want', `All I want is nothing more
+To hear you knocking at my door
+'Cause if I could see your face once more`, 'Kodaline')
+const musica3 =  new Musica('Withou me', `Obie Trice, real name no gimmicks
+Two trailer park girls go round the outside`, 'Eminem')
+
+function saoIguais(musica, musica2){
+    //compara se as musicas sao iguais
+    return musica.nome === musica3.nome && musica.letra === musica3.letra && musica.autor === musica3.autor
+}
+console.log(saoIguais(musica, musica3))
+
+
+function temMemoriaDaMusicaIgual(musica, musica2){
+    //compara se a referencia a ponta para o mesmo local da memoria
+    return musica === musica3
+}
+
+console.log(saoIguais(musica, musica3))
+
+let postagem = {
+    titulo: 'a',
+    mensagem: 'b',
+    autor: 'c',
+    vizualizacoes: 10,
+    comentarios: [
+        { autor: 'a', mensagem: 'b'},
+        { autor: 'c', mensagem: 'd'}
+    ],
+    estaAoVivo : true
+}
+
+console.log(postagem)

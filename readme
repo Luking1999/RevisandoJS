@@ -1,0 +1,46 @@
+/**
+ * maneira extensa
+ * function criarManga(){
+ *  const manga = {
+ *      nomeManga: 'Wind Breaker',
+ *      autorManga: 'Jo Yongseuk',
+ *      categoria: ['Comédia', 'Drama', 'Esportes', 'Romance'],
+ *      ler: function(){
+ *          console.log("cap1: Estou indo para biblioteca.")
+ *      }
+ *  } 
+ * }
+ */
+//  camelCase umDoisTresQuatro
+// function criarManga(nomeManga, autorManga, categoria){
+//     return {
+//         nomeManga,
+//         autorManga,
+//         categoria,
+//         ler(){
+//             console.log("cap1: Estou indo para biblioteca.")
+//         }
+//     }
+// }
+// const mangaWB = criarManga('Wind Breaker', 'Jo Yongseuk', ['Comédia', 'Drama', 'Esportes', 'Romance']);
+// console.log(mangaWB);
+
+//  PascalCase UmDoisTres
+
+
+// javascript math develop mozila
+// js string
+// js escape sequences
+// ´´ 
+// Date
+// tooltip
+
+/*Arrays:
+    nomeArray.unshift() adiciona no começo
+    nA.splice(1,0, 'novoItem') adiciona no meio. 1 é o indece o 0 é pq n quer deletar nada
+    nA.push() add no topo
+    nA.indexOf() procura o valor desejado retorna 1 se achar e -1 se n achar
+    nA.lastIndexOf() procura o ultimo valor desejado e retorna a posição
+    nA.includes() retorna true/false se encontrar 
+
+*/
