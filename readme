@@ -37,10 +37,23 @@
 
 /*Arrays:
     nomeArray.unshift() adiciona no começo
-    nA.splice(1,0, 'novoItem') adiciona no meio. 1 é o indece o 0 é pq n quer deletar nada
+    nA.splice(1,0, 'novoItem') adiciona no meio. 1 é o indece o 0 é quantos vai remover
     nA.push() add no topo
     nA.indexOf() procura o valor desejado retorna 1 se achar e -1 se n achar
     nA.lastIndexOf() procura o ultimo valor desejado e retorna a posição
     nA.includes() retorna true/false se encontrar 
+    nA.pop() remove o ultimo valor
+    nA.shift() remove o primeiro valor
+    nA.concat(nA2) junta os arrays
+    nA.slice(1,3) vai do indice 1 até o 3 e separa o array mas nunca pega o ultimo valor, 
+        caso n coloque o 3 ele irá remover todos a partir do 1 e se n passar nada ele pega todos os valores
+    nAaux = [...nA,'a',...nA2]; outro modo de juntar array, e tbm pode adicionar coisa como por exemplo o 'a'
+    nAclone = [...nA] clona array
+    nAaux = nA.join('escolhe qql coisa pra ficar entre os dados exemplo 1;2;3;4')
+    nA.split(' ') separa os espaços(\n)
+
+    let/var e const
+    find() js mozila
+    nA.lenght = 0; apaga todas as referencias do array
 
 */

@@ -106,3 +106,12 @@ let postagem = {
 }
 
 console.log(postagem)
+
+const numeros = [1,2,3,4,5]
+// opção 1 
+// numeros.forEach(function(numeros){
+//     console.log(numeros)
+// })
+// opção 2
+numeros.forEach((numeros) => console.log(numeros))
+numeros.forEach((numeros, indice) => console.log(numeros, indice))
